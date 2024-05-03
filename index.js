@@ -7,11 +7,9 @@ const upload = multer();
 var app = express();
 
 app.use(cors());
-// app.use('/public', express.static(process.cwd() + '/public'));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-  // res.sendFile(process.cwd() + '/views/index.html');
   res.sendFile(__dirname + '/views/index.html');
 });
 
