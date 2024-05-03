@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-
 <html>
    <head>
       <title>File Metadata</title>
       <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <!-- Bootstrap CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
       <link href="./style.css" rel="stylesheet" type="text/css">
    </head>
 
    <body>
       <div class="container">
-        <h2>API Project: File Metadata Microservice</h2>
+        <h2 class="mt-5 font-weight-bold">File Metadata Microservice</h2>
 
-        <h3>Usage:</h3>
+        <h3 class="mt-4 mb-4">Usage:</h3>
         <p>
-          Please Upload a File ...
+          Upload a file to instantly view its size in bytes!
         </p>
-        <div class="view">
+        <div class="view mt-4 p-4">
           <h4 id="output"></h4>
           <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
-            <input id="inputfield" type="file" name="upfile">
-            <input id="button" type="submit" value="Upload">
+            <!-- Utilize Bootstrap grid system to center the input -->
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <input id="inputfield" type="file" name="upfile" class="form-control-file">
+              </div>
+            </div>
+            <button id="button" type="submit" class="btn btn-dark mt-3">Upload</button>
           </form>
         </div>
       </div>
-      <div class="footer">
+      <footer class="mt-5">
         <p>
-          by 
-          <a href="http://www.freecodecamp.com">freeCodeCamp</a>
+          By <a href="https://www.github.com/fdezar">@fdezar</a>
         </p>
-      </div>
+        <p>
+          <a href="https://www.github.com/fdezar/boilerplate-project-timestamp">https://www.github.com/fdezar/boilerplate-project-timestamp</a>
+        </p>
+      </footer>
    </body>
 </html>
+
