@@ -1,6 +1,6 @@
 # File Metadata Microservice
 
-File Metadata Microservice is a simple web application that allows users to upload files and instantly view their size in bytes. This project is implemented using Node.js, Express, Multer, and Bootstrap.
+This is a simple web application that allows users to upload files and instantly view their size in bytes. This project is implemented using Node.js, Express, Multer, and Bootstrap.
 
 ## Features ✨
 
