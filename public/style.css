@@ -1,41 +1,34 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: lightgreen;
-  text-align: center;
+  background-color: #d0ddee;
 }
 
 .container {
-  padding: 0;
-  margin-top: 40px;
+  max-width: 960px;
 }
 
-footer {
-  margin-top: 60px;
+.how-to-use {
+  background-color: #193b8d;
+}
+
+.btn-primary {
+  background-color: #193b8d;
+  border: 3px solid #193b8d;
+  font-size: 18px;
 }
 
 a {
-  color: #333;
+  color: #193b8d;
+}
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
 }
 
 input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
-}
-
-input#button {
-  width: 230px;
-}
-
-.view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  background-color: white;
-  border: 1px  solid  #222;
-  padding: 20px;
-  width: 60%;
-  min-width: 400px;
+  font-size: 18px;
 }
